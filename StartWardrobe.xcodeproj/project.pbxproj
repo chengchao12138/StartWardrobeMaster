@@ -49,6 +49,11 @@
 		428096F01B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096E41B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m */; };
 		428096F11B8AFC3000DCD26B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096E61B8AFC3000DCD26B /* DDMultiFormatter.m */; };
 		428096F41B8AFC6A00DCD26B /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096F31B8AFC6A00DCD26B /* Log.m */; };
+		428097511B8B0FBC00DCD26B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428097501B8B0FBC00DCD26B /* MainViewController.m */; };
+		42B65A7A1B8B1CC400AED0CE /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A791B8B1CC400AED0CE /* ShoppingCartViewController.m */; };
+		42B65A7D1B8B1CE600AED0CE /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A7C1B8B1CE600AED0CE /* MyViewController.m */; };
+		42B65A801B8B1D0D00AED0CE /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A7F1B8B1D0D00AED0CE /* CommunityViewController.m */; };
+		42B65A831B8B1D2D00AED0CE /* CollocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A821B8B1D2D00AED0CE /* CollocationViewController.m */; };
 		42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */; };
 		42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D51B8AC2CC0094A9CF /* CCBaseViewController.m */; };
 		42CAF7DA1B8AC3480094A9CF /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D91B8AC3480094A9CF /* CCBaseTabBarController.m */; };
@@ -160,6 +165,16 @@
 		428096E61B8AFC3000DCD26B /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		428096F21B8AFC6A00DCD26B /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		428096F31B8AFC6A00DCD26B /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		4280974F1B8B0FBC00DCD26B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		428097501B8B0FBC00DCD26B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		42B65A781B8B1CC400AED0CE /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
+		42B65A791B8B1CC400AED0CE /* ShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
+		42B65A7B1B8B1CE600AED0CE /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		42B65A7C1B8B1CE600AED0CE /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		42B65A7E1B8B1D0D00AED0CE /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		42B65A7F1B8B1D0D00AED0CE /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		42B65A811B8B1D2D00AED0CE /* CollocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollocationViewController.h; sourceTree = "<group>"; };
+		42B65A821B8B1D2D00AED0CE /* CollocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollocationViewController.m; sourceTree = "<group>"; };
 		42CAF7D01B8AC27F0094A9CF /* CCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseNavigationController.h; sourceTree = "<group>"; };
 		42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseNavigationController.m; sourceTree = "<group>"; };
 		42CAF7D41B8AC2CC0094A9CF /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
@@ -389,9 +404,59 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4280974E1B8B0F5A00DCD26B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4280974F1B8B0FBC00DCD26B /* MainViewController.h */,
+				428097501B8B0FBC00DCD26B /* MainViewController.m */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		42B65A741B8B1C1B00AED0CE /* Collocation */ = {
+			isa = PBXGroup;
+			children = (
+				42B65A811B8B1D2D00AED0CE /* CollocationViewController.h */,
+				42B65A821B8B1D2D00AED0CE /* CollocationViewController.m */,
+			);
+			name = Collocation;
+			sourceTree = "<group>";
+		};
+		42B65A751B8B1C1F00AED0CE /* community */ = {
+			isa = PBXGroup;
+			children = (
+				42B65A7E1B8B1D0D00AED0CE /* CommunityViewController.h */,
+				42B65A7F1B8B1D0D00AED0CE /* CommunityViewController.m */,
+			);
+			name = community;
+			sourceTree = "<group>";
+		};
+		42B65A761B8B1C2200AED0CE /* shoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				42B65A781B8B1CC400AED0CE /* ShoppingCartViewController.h */,
+				42B65A791B8B1CC400AED0CE /* ShoppingCartViewController.m */,
+			);
+			name = shoppingCart;
+			sourceTree = "<group>";
+		};
+		42B65A771B8B1C8600AED0CE /* My */ = {
+			isa = PBXGroup;
+			children = (
+				42B65A7B1B8B1CE600AED0CE /* MyViewController.h */,
+				42B65A7C1B8B1CE600AED0CE /* MyViewController.m */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
 		42CAF7BA1B8ABFFB0094A9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				42B65A771B8B1C8600AED0CE /* My */,
+				42B65A761B8B1C2200AED0CE /* shoppingCart */,
+				42B65A751B8B1C1F00AED0CE /* community */,
+				42B65A741B8B1C1B00AED0CE /* Collocation */,
+				4280974E1B8B0F5A00DCD26B /* MainViewController */,
 				42CAF7E61B8AC4F60094A9CF /* BaseClass */,
 			);
 			name = Controller;
@@ -719,6 +784,8 @@
 				42CAF7EE1B8ACB1D0094A9CF /* NSString+MD5.m in Sources */,
 				42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */,
 				428096B01B8AFAEB00DCD26B /* UIImageView+WebCache.m in Sources */,
+				42B65A7D1B8B1CE600AED0CE /* MyViewController.m in Sources */,
+				428097511B8B0FBC00DCD26B /* MainViewController.m in Sources */,
 				428096EB1B8AFC3000DCD26B /* DDASLLogger.m in Sources */,
 				428096A51B8AFAEB00DCD26B /* SDWebImageCompat.m in Sources */,
 				428096C21B8AFB3400DCD26B /* FMResultSet.m in Sources */,
@@ -728,11 +795,14 @@
 				428096AD1B8AFAEB00DCD26B /* UIImage+MultiFormat.m in Sources */,
 				428096BE1B8AFB3400DCD26B /* FMDatabase.m in Sources */,
 				428096AE1B8AFAEB00DCD26B /* UIImage+WebP.m in Sources */,
+				42B65A801B8B1D0D00AED0CE /* CommunityViewController.m in Sources */,
 				428096F41B8AFC6A00DCD26B /* Log.m in Sources */,
+				42B65A831B8B1D2D00AED0CE /* CollocationViewController.m in Sources */,
 				428096A81B8AFAEB00DCD26B /* SDWebImageDownloaderOperation.m in Sources */,
 				428096B11B8AFAEB00DCD26B /* UIView+WebCacheOperation.m in Sources */,
 				428096F01B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m in Sources */,
 				428096A71B8AFAEB00DCD26B /* SDWebImageDownloader.m in Sources */,
+				42B65A7A1B8B1CC400AED0CE /* ShoppingCartViewController.m in Sources */,
 				428096EC1B8AFC3000DCD26B /* DDFileLogger.m in Sources */,
 				428096E71B8AFC3000DCD26B /* CLIColor.m in Sources */,
 				428096AC1B8AFAEB00DCD26B /* UIImage+GIF.m in Sources */,

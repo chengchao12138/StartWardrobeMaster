@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.navigationController.navigationBar.barTintColor=[UIColor colorWithRed:30/255.0 green:144/255.0 blue:255/250.0 alpha:0.5];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -111,11 +111,11 @@
         self.barbuttonItemAction();
     }
 }
-#ifdef __IPHONE_7_0
-- (UIRectEdge)edgesForExtendedLayout {
-    return UIRectEdgeNone;
-}
-#endif
+//#ifdef __IPHONE_7_0
+//- (UIRectEdge)edgesForExtendedLayout {
+//    return UIRectEdgeNone;
+//}
+//#endif
 /*
 #pragma mark - Navigation
 

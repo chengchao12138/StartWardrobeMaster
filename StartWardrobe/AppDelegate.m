@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainViewController.h"
+#import "CCBaseNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,8 +19,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSString *str=INTERNATIONAL(@"");
+    self.window=[[UIWindow   alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
+    MainViewController *mainVC=[[MainViewController  alloc]init];
+    CCBaseNavigationController *NavigationController1=[[CCBaseNavigationController  alloc]initWithRootViewController:mainVC];
+    NavigationController1.tabBarItem.image= [UIImage imageNamed:@""];
+    
+    
+    
+    [self.window setRootViewController:NavigationController1];
     return YES;
 }
 
