@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>210FC261-F922-4A69-AEBD-88D46343BFB9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StartWardrobe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12E0A339A1891A5A6245D436E49C5ACAF1CA27BE</key>
+		<string>https://github.com/chengchao12138/StartWardrobeMaster.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StartWardrobe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12E0A339A1891A5A6245D436E49C5ACAF1CA27BE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chengchao12138/StartWardrobeMaster.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12E0A339A1891A5A6245D436E49C5ACAF1CA27BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12E0A339A1891A5A6245D436E49C5ACAF1CA27BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StartWardrobeMaster</string>
+		</dict>
+	</array>
+</dict>
+</plist>
