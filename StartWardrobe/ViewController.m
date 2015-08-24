@@ -17,12 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    UILabel *la=[[UILabel alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:la];
-    NSString * str=NSLocalizedString(@"key", nil);
-    la.text=str;
-    
 }
 
 - (void)didReceiveMemoryWarning {
