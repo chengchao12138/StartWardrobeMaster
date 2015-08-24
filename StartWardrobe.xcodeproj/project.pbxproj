@@ -21,6 +21,7 @@
 		42CAF7E11B8AC3C30094A9CF /* CCBasePullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7E01B8AC3C30094A9CF /* CCBasePullRefreshTableViewController.m */; };
 		42CAF7E51B8AC4440094A9CF /* CCBaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7E41B8AC4440094A9CF /* CCBaseSearchViewController.m */; };
 		42CAF7EE1B8ACB1D0094A9CF /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7ED1B8ACB1D0094A9CF /* NSString+MD5.m */; };
+		42CAF7F41B8ADA5B0094A9CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42CAF7F61B8ADA5B0094A9CF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,13 @@
 		42CAF7EB1B8AC8030094A9CF /* CCGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGlobalMacro.h; sourceTree = "<group>"; };
 		42CAF7EC1B8ACB1D0094A9CF /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		42CAF7ED1B8ACB1D0094A9CF /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		42CAF7F21B8AD9E60094A9CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		42CAF7F31B8AD9E60094A9CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		42CAF7F51B8ADA5B0094A9CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		42CAF7F71B8ADA600094A9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		42CAF7F81B8ADC3D0094A9CF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		42CAF7F91B8ADC3D0094A9CF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		42CAF7FA1B8ADC3D0094A9CF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +194,7 @@
 		42CAF7C21B8AC0E10094A9CF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				42CAF7E91B8AC75F0094A9CF /* Other */,
+				42CAF7E91B8AC75F0094A9CF /* LocalString */,
 				42CAF7C41B8AC0F90094A9CF /* Images */,
 				42CAF7C31B8AC0F20094A9CF /* Plist */,
 			);
@@ -324,11 +332,12 @@
 			name = BaseViewController;
 			sourceTree = "<group>";
 		};
-		42CAF7E91B8AC75F0094A9CF /* Other */ = {
+		42CAF7E91B8AC75F0094A9CF /* LocalString */ = {
 			isa = PBXGroup;
 			children = (
+				42CAF7F61B8ADA5B0094A9CF /* Localizable.strings */,
 			);
-			name = Other;
+			name = LocalString;
 			sourceTree = "<group>";
 		};
 		42CAF7EA1B8AC7B40094A9CF /* Macro */ = {
@@ -411,6 +420,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 426721BE1B881FF600D7E201;
 			productRefGroup = 426721C81B881FF600D7E201 /* Products */;
@@ -429,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				426721D61B881FF600D7E201 /* Main.storyboard in Resources */,
+				42CAF7F41B8ADA5B0094A9CF /* Localizable.strings in Resources */,
 				426721DB1B881FF600D7E201 /* LaunchScreen.xib in Resources */,
 				426721D81B881FF600D7E201 /* Images.xcassets in Resources */,
 			);
@@ -484,6 +495,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				426721D51B881FF600D7E201 /* Base */,
+				42CAF7F21B8AD9E60094A9CF /* es */,
+				42CAF7F81B8ADC3D0094A9CF /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -492,8 +505,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				426721DA1B881FF600D7E201 /* Base */,
+				42CAF7F31B8AD9E60094A9CF /* es */,
+				42CAF7F91B8ADC3D0094A9CF /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		42CAF7F61B8ADA5B0094A9CF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42CAF7F51B8ADA5B0094A9CF /* es */,
+				42CAF7F71B8ADA600094A9CF /* en */,
+				42CAF7FA1B8ADC3D0094A9CF /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
