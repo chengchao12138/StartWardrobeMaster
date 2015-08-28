@@ -7,7 +7,7 @@
 //
 
 #import "CCBaseViewController.h"
-
+#import "LCProgressHUD.h"
 @interface CCBaseViewController ()
     
 @property (nonatomic, copy) CCBarButtonItemActionBlock barbuttonItemAction;
@@ -53,18 +53,48 @@
 }
 
 - (void)showLoadingWithText:(NSString *)text onView:(UIView *)view {
+   
+    NSArray *array =  [NSArray arrayWithObjects:
+                       [UIImage imageNamed:@"icon_hud_1.png"],
+                       [UIImage imageNamed:@"icon_hud_2.png"],
+                       [UIImage imageNamed:@"icon_hud_3.png"],
+                       [UIImage imageNamed:@"icon_hud_4.png"],
+                       [UIImage imageNamed:@"icon_hud_5.png"],
+                       [UIImage imageNamed:@"icon_hud_6.png"],
+                       [UIImage imageNamed:@"icon_hud_7.png"],
+                       [UIImage imageNamed:@"icon_hud_8.png"],
+                       [UIImage imageNamed:@"icon_hud_9.png"],
+                       nil];
+    UIImageView *image=[[UIImageView alloc]init];
+    image.center=self.view.center;
+    image.bounds=CGRectMake(0, 0, 100, 65);
+    [image setAnimationImages:array];
+    [image setAnimationDuration:0.5];
+    [image setAnimationRepeatCount:0];
+    [image startAnimating];
     
+    MBProgressHUD * hud=    [[MBProgressHUD alloc]initWithView:self.view];
+    hud.mode=MBProgressHUDModeCustomView;
+    hud.color=[UIColor whiteColor];
+    hud.customView=image;
+    hud.labelText=@"加载中";
+    hud.labelFont=[UIFont fontWithName:@"Helvetica" size:12];
+    hud.labelColor=RGBACOLOR(25, 225, 25, 1);
+    [self.view addSubview:hud];
+    [hud show:YES];
 }
 
 - (void)showSuccess {
     
+   [ LCProgressHUD     showStatus:LCProgressHUDStatusSuccess   text:@"成功"];
 }
 - (void)showError {
     
+    [LCProgressHUD     showStatus:LCProgressHUDStatusError text:nil];
 }
 
 - (void)hideLoading {
-    
+    [LCProgressHUD hide];
 }
 
 #pragma mark - View rotation
@@ -111,11 +141,11 @@
         self.barbuttonItemAction();
     }
 }
-//#ifdef __IPHONE_7_0
-//- (UIRectEdge)edgesForExtendedLayout {
-//    return UIRectEdgeNone;
-//}
-//#endif
+#ifdef __IPHONE_7_0
+- (UIRectEdge)edgesForExtendedLayout {
+    return UIRectEdgeNone;
+}
+#endif
 /*
 #pragma mark - Navigation
 

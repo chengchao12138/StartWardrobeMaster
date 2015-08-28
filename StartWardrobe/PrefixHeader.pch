@@ -14,4 +14,6 @@
 
 #import "CCGlobalMacro.h"
 #import "Header.h"
+
+#import "CocoaLumberjack.h"
 #endif

@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "MBProgressHUD.h"
 
 @implementation MainViewController
 
@@ -15,10 +16,8 @@
     [super viewDidLoad];
 }
 -(void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    [self loadDataSource];
-     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self showLoading];
+   
 }
 -(void)loadDataSource
 {

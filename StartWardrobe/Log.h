@@ -10,7 +10,7 @@
 #import "DDLog.h"
 #import "DDFileLogger.h"
 #import "DDTTYLogger.h"
-
+#import "CocoaLumberjack.h"
 //#define
 
 /**
@@ -21,7 +21,7 @@
 /******************************
  * 默认LOG等级，由开发者调试时候设置
  *******************************/
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+//static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @interface Log : NSObject
 @property(nonatomic,assign,getter=isDoing,readonly) BOOL  Doing;
