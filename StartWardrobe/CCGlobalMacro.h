@@ -10,11 +10,11 @@
 #define StartWardrobe_CCGlobalMacro_h
 
 
-#ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#   define DLog(...)
-#endif
+//#ifdef DEBUG
+//#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+//#else
+//#   define DLog(...)
+//#endif
 
 
 
@@ -53,6 +53,18 @@
 
 // image STRETCH
 #define XH_STRETCH_IMAGE(image, edgeInsets) (CURRENT_SYS_VERSION < 6.0 ? [image stretchableImageWithLeftCapWidth:edgeInsets.left topCapHeight:edgeInsets.top] : [image resizableImageWithCapInsets:edgeInsets resizingMode:UIImageResizingModeStretch])
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #endif

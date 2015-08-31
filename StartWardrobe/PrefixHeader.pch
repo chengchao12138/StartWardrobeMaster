@@ -14,7 +14,14 @@
 
 #import "CCGlobalMacro.h"
 #import "Header.h"
-
 #import "CocoaLumberjack.h"
 #import "NSString+Tools.h"
+#import "DDLogMacros.h"
+
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
 #endif

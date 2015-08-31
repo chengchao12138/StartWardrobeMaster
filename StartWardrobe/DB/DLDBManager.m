@@ -7,7 +7,7 @@
 //
 
 #import "DLDBManager.h"
-
+#import "DDLog.h"
 
 /**
  *
@@ -68,7 +68,7 @@ static FMDatabaseQueue *dbQueue;
     {
         NSString *sSQL = [NSString stringWithFormat:sql,tableName];
         
-//        DDLogInfo(@"createTable SQL is:%@",sSQL);
+      DDLogInfo(@"createTable SQL is:%@",sSQL);
         BOOL res = [db executeUpdate:sSQL];
         if (!res)
         {

@@ -2,65 +2,36 @@
 //  NDLog.m
 //  IOS-IM
 //
-//  Created by chengchao on 15/8/24.
-//  Copyright (c) 2015年 chengchao. All rights reserved.
+//  Created by chenhui on 13-9-9.
+//  Copyright (c) 2013年 chenhui. All rights reserved.
 //
-
 
 // DDLog的简单调用控制
 #import "Log.h"
 #import <Foundation/Foundation.h>
-#import "Header.h"
 
 @implementation Log
 
-+ (Log *)logOpen
++ (void)logOpen
 {
-    static Log *shareLogInstance = nil;
-    
-    static dispatch_once_t doInit;
-    dispatch_once(&doInit, ^{
-        shareLogInstance = [[self alloc] init];
-    });
-    
-    return shareLogInstance;
-}
-
-
-- (id)init
-{
-    if(self = [super init])
-    {
-        #ifdef CONSOLE_LOG_ON
-            [DDLog addLogger:[DDTTYLogger sharedInstance]];
-            [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-        #endif
-
-        if([self isFileLogIndicatorExist])
-        {
-            DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
-            fileLogger.rollingFrequency = 60 * 60 * 24;  //记录2个小时的log
-            fileLogger.logFileManager.maximumNumberOfLogFiles = 1;//1
-            [DDLog addLogger:fileLogger];
-        }
-    }
-    return self;
-}
-
-
-- (BOOL)isFileLogIndicatorExist
-{
-
 #ifdef CONSOLE_LOG_ON
-    return TRUE;
-#else
-    return FALSE;
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    [self openFileLog];
 #endif
-    return YES;
-    return true;
 }
-- (void)dealloc
+
++ (void)openFileLog
 {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    NSString *FileLogIndicator = [docDir stringByAppendingPathComponent:LOG_INDICATOR_FILE_NAME];
+    DDLogFileManagerDefault *defaultFileManager = [[DDLogFileManagerDefault alloc] initWithLogsDirectory:FileLogIndicator];
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:defaultFileManager];
+    fileLogger.rollingFrequency = 60 * 60 * 24; //记录一周
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    
+    [DDLog addLogger:fileLogger];
 }
 
 @end

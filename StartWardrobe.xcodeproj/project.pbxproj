@@ -48,7 +48,6 @@
 		428096EF1B8AFC3000DCD26B /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096E21B8AFC3000DCD26B /* DDContextFilterLogFormatter.m */; };
 		428096F01B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096E41B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m */; };
 		428096F11B8AFC3000DCD26B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096E61B8AFC3000DCD26B /* DDMultiFormatter.m */; };
-		428096F41B8AFC6A00DCD26B /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 428096F31B8AFC6A00DCD26B /* Log.m */; };
 		428097511B8B0FBC00DCD26B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428097501B8B0FBC00DCD26B /* MainViewController.m */; };
 		42B65A7A1B8B1CC400AED0CE /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A791B8B1CC400AED0CE /* ShoppingCartViewController.m */; };
 		42B65A7D1B8B1CE600AED0CE /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65A7C1B8B1CE600AED0CE /* MyViewController.m */; };
@@ -83,6 +82,8 @@
 		42B65AFD1B8EB67100AED0CE /* HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65AFC1B8EB67100AED0CE /* HUDTools.m */; };
 		42B65B751B94504100AED0CE /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B741B94504100AED0CE /* NSString+Tools.m */; };
 		42B65B781B94528500AED0CE /* DLDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B771B94528500AED0CE /* DLDBManager.m */; };
+		42B65B7B1B94532A00AED0CE /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B7A1B94532A00AED0CE /* Log.m */; };
+		42B65B7F1B9457BB00AED0CE /* GlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B7E1B9457BB00AED0CE /* GlobalConfig.m */; };
 		42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */; };
 		42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D51B8AC2CC0094A9CF /* CCBaseViewController.m */; };
 		42CAF7DA1B8AC3480094A9CF /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D91B8AC3480094A9CF /* CCBaseTabBarController.m */; };
@@ -192,8 +193,6 @@
 		428096E41B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		428096E51B8AFC3000DCD26B /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
 		428096E61B8AFC3000DCD26B /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
-		428096F21B8AFC6A00DCD26B /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
-		428096F31B8AFC6A00DCD26B /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		4280974F1B8B0FBC00DCD26B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		428097501B8B0FBC00DCD26B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		42B65A781B8B1CC400AED0CE /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
@@ -238,6 +237,10 @@
 		42B65B741B94504100AED0CE /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
 		42B65B761B94528500AED0CE /* DLDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLDBManager.h; path = DB/DLDBManager.h; sourceTree = "<group>"; };
 		42B65B771B94528500AED0CE /* DLDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLDBManager.m; path = DB/DLDBManager.m; sourceTree = "<group>"; };
+		42B65B791B94532A00AED0CE /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		42B65B7A1B94532A00AED0CE /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		42B65B7D1B9457BB00AED0CE /* GlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		42B65B7E1B9457BB00AED0CE /* GlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConfig.m; sourceTree = "<group>"; };
 		42CAF7D01B8AC27F0094A9CF /* CCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseNavigationController.h; sourceTree = "<group>"; };
 		42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseNavigationController.m; sourceTree = "<group>"; };
 		42CAF7D41B8AC2CC0094A9CF /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
@@ -411,8 +414,8 @@
 		428096C91B8AFC0C00DCD26B /* LOG */ = {
 			isa = PBXGroup;
 			children = (
-				428096F21B8AFC6A00DCD26B /* Log.h */,
-				428096F31B8AFC6A00DCD26B /* Log.m */,
+				42B65B791B94532A00AED0CE /* Log.h */,
+				42B65B7A1B94532A00AED0CE /* Log.m */,
 			);
 			name = LOG;
 			sourceTree = "<group>";
@@ -562,6 +565,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		42B65B7C1B94578100AED0CE /* GlobalConfig */ = {
+			isa = PBXGroup;
+			children = (
+				42B65B7D1B9457BB00AED0CE /* GlobalConfig.h */,
+				42B65B7E1B9457BB00AED0CE /* GlobalConfig.m */,
+			);
+			name = GlobalConfig;
+			sourceTree = "<group>";
+		};
 		42CAF7BA1B8ABFFB0094A9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,6 +654,7 @@
 		42CAF7C51B8AC1120094A9CF /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				42B65B7C1B94578100AED0CE /* GlobalConfig */,
 				428096C91B8AFC0C00DCD26B /* LOG */,
 				42CAF7EA1B8AC7B40094A9CF /* Macro */,
 				42CAF7CB1B8AC18D0094A9CF /* Const */,
@@ -928,6 +941,7 @@
 				428096C11B8AFB3400DCD26B /* FMDatabaseQueue.m in Sources */,
 				428096F11B8AFC3000DCD26B /* DDMultiFormatter.m in Sources */,
 				428096A91B8AFAEB00DCD26B /* SDWebImageManager.m in Sources */,
+				42B65B7B1B94532A00AED0CE /* Log.m in Sources */,
 				42CAF7EE1B8ACB1D0094A9CF /* NSString+MD5.m in Sources */,
 				42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */,
 				428096B01B8AFAEB00DCD26B /* UIImageView+WebCache.m in Sources */,
@@ -943,12 +957,12 @@
 				428096BE1B8AFB3400DCD26B /* FMDatabase.m in Sources */,
 				428096AE1B8AFAEB00DCD26B /* UIImage+WebP.m in Sources */,
 				42B65A801B8B1D0D00AED0CE /* CommunityViewController.m in Sources */,
-				428096F41B8AFC6A00DCD26B /* Log.m in Sources */,
 				42B65A831B8B1D2D00AED0CE /* CollocationViewController.m in Sources */,
 				428096A81B8AFAEB00DCD26B /* SDWebImageDownloaderOperation.m in Sources */,
 				42B65B751B94504100AED0CE /* NSString+Tools.m in Sources */,
 				428096B11B8AFAEB00DCD26B /* UIView+WebCacheOperation.m in Sources */,
 				42B65AFD1B8EB67100AED0CE /* HUDTools.m in Sources */,
+				42B65B7F1B9457BB00AED0CE /* GlobalConfig.m in Sources */,
 				428096F01B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m in Sources */,
 				428096A71B8AFAEB00DCD26B /* SDWebImageDownloader.m in Sources */,
 				42B65A7A1B8B1CC400AED0CE /* ShoppingCartViewController.m in Sources */,
