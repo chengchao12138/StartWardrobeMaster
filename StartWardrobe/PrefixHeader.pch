@@ -16,4 +16,5 @@
 #import "Header.h"
 
 #import "CocoaLumberjack.h"
+#import "NSString+Tools.h"
 #endif

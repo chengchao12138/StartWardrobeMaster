@@ -81,6 +81,8 @@
 		42B65AF91B8EAD3A00AED0CE /* icon_hud_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B65AE71B8EAD3A00AED0CE /* icon_hud_9@2x.png */; };
 		42B65AFA1B8EAD3A00AED0CE /* icon_hud_9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B65AE81B8EAD3A00AED0CE /* icon_hud_9@3x.png */; };
 		42B65AFD1B8EB67100AED0CE /* HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65AFC1B8EB67100AED0CE /* HUDTools.m */; };
+		42B65B721B944EEC00AED0CE /* DLDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B701B944EEC00AED0CE /* DLDBManager.m */; };
+		42B65B751B94504100AED0CE /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65B741B94504100AED0CE /* NSString+Tools.m */; };
 		42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */; };
 		42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D51B8AC2CC0094A9CF /* CCBaseViewController.m */; };
 		42CAF7DA1B8AC3480094A9CF /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D91B8AC3480094A9CF /* CCBaseTabBarController.m */; };
@@ -232,6 +234,10 @@
 		42B65AE81B8EAD3A00AED0CE /* icon_hud_9@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_hud_9@3x.png"; sourceTree = "<group>"; };
 		42B65AFB1B8EB67100AED0CE /* HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDTools.h; sourceTree = "<group>"; };
 		42B65AFC1B8EB67100AED0CE /* HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDTools.m; sourceTree = "<group>"; };
+		42B65B701B944EEC00AED0CE /* DLDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLDBManager.m; path = "未命名文件夹/DLDBManager.m"; sourceTree = "<group>"; };
+		42B65B711B944EEC00AED0CE /* DLDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLDBManager.h; path = "未命名文件夹/DLDBManager.h"; sourceTree = "<group>"; };
+		42B65B731B94504100AED0CE /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		42B65B741B94504100AED0CE /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
 		42CAF7D01B8AC27F0094A9CF /* CCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseNavigationController.h; sourceTree = "<group>"; };
 		42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseNavigationController.m; sourceTree = "<group>"; };
 		42CAF7D41B8AC2CC0094A9CF /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
@@ -658,6 +664,8 @@
 		42CAF7C71B8AC14B0094A9CF /* Datebase */ = {
 			isa = PBXGroup;
 			children = (
+				42B65B711B944EEC00AED0CE /* DLDBManager.h */,
+				42B65B701B944EEC00AED0CE /* DLDBManager.m */,
 				428096C61B8AFBF000DCD26B /* DBOperation.h */,
 				428096C71B8AFBF000DCD26B /* DBOperation.m */,
 			);
@@ -776,6 +784,8 @@
 			children = (
 				42CAF7EC1B8ACB1D0094A9CF /* NSString+MD5.h */,
 				42CAF7ED1B8ACB1D0094A9CF /* NSString+MD5.m */,
+				42B65B731B94504100AED0CE /* NSString+Tools.h */,
+				42B65B741B94504100AED0CE /* NSString+Tools.m */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
@@ -917,6 +927,7 @@
 				428096C01B8AFB3400DCD26B /* FMDatabasePool.m in Sources */,
 				428096C11B8AFB3400DCD26B /* FMDatabaseQueue.m in Sources */,
 				428096F11B8AFC3000DCD26B /* DDMultiFormatter.m in Sources */,
+				42B65B721B944EEC00AED0CE /* DLDBManager.m in Sources */,
 				428096A91B8AFAEB00DCD26B /* SDWebImageManager.m in Sources */,
 				42CAF7EE1B8ACB1D0094A9CF /* NSString+MD5.m in Sources */,
 				42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */,
@@ -936,6 +947,7 @@
 				428096F41B8AFC6A00DCD26B /* Log.m in Sources */,
 				42B65A831B8B1D2D00AED0CE /* CollocationViewController.m in Sources */,
 				428096A81B8AFAEB00DCD26B /* SDWebImageDownloaderOperation.m in Sources */,
+				42B65B751B94504100AED0CE /* NSString+Tools.m in Sources */,
 				428096B11B8AFAEB00DCD26B /* UIView+WebCacheOperation.m in Sources */,
 				42B65AFD1B8EB67100AED0CE /* HUDTools.m in Sources */,
 				428096F01B8AFC3000DCD26B /* DDDispatchQueueLogFormatter.m in Sources */,
