@@ -66,8 +66,6 @@ static FMDatabase *db   =   nil;
                 BOOL a = [db executeUpdate:sql,nId,strName];
                 if (!a)
                 {
-                   
-                    
                     
                 }
             }
