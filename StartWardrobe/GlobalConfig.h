@@ -11,5 +11,8 @@
 @interface GlobalConfig : NSObject
 
 +(instancetype)ShareGlobalConfig;
-
+-(void)initDBSetting;
+-(void)initGlobalLogSettting;
+-(void)registerAPNS;
+-(void)unregisterAPNS;
 @end

@@ -14,11 +14,11 @@
 
 + (void)logOpen
 {
-#ifdef CONSOLE_LOG_ON
+
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
     [self openFileLog];
-#endif
+
 }
 
 + (void)openFileLog

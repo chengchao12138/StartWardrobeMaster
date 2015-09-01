@@ -72,17 +72,17 @@ static FMDatabaseQueue *dbQueue;
         BOOL res = [db executeUpdate:sSQL];
         if (!res)
         {
-//            DDLogError(@"createTable SQL is:%@",sql);
+           DDLogError(@"createTable SQL is:%@",sql);
         }
         else
         {
-//            DDLogInfo(@"succ to creating db table");
+            DDLogInfo(@"succ to creating db table");
         }
         [db close];
     }
     else
     {
-//        DDLogError(@"error when open db");
+            DDLogError(@"error when open db");
     }
 }
 
@@ -101,11 +101,11 @@ static FMDatabaseQueue *dbQueue;
          
          if(result)
          {
-//             DDLogError(@"ALTER Success");
+            DDLogError(@"ALTER Success");
          }
          else
          {
-//             DDLogError(@"ALTER Failed");
+            DDLogError(@"ALTER Failed");
          }
      }];
 }

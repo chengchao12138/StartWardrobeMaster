@@ -34,6 +34,9 @@
 //重新初始化数据库
 +(void)reInitDBQueue;
 + (void)closeDB;
+/**
+ *  初始化数据库建表操作
+ */
 + (void)createTables;
 //更新数据库表字段
 + (void)updateDBTable:(NSString*)sqlVersion andOldVersion:(NSString*)oldVersion;

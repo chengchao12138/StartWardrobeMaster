@@ -16,7 +16,6 @@
 #import "Header.h"
 #import "CocoaLumberjack.h"
 #import "NSString+Tools.h"
-#import "DDLogMacros.h"
 
 #ifdef DEBUG
 static const int ddLogLevel = DDLogLevelVerbose;

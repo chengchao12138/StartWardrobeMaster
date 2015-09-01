@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "CCBaseNavigationController.h"
+#import "GlobalConfig.h"
 @interface AppDelegate ()
 
 @end
@@ -30,6 +31,14 @@
     
     
     [self.window setRootViewController:NavigationController1];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [[GlobalConfig  ShareGlobalConfig]initGlobalLogSettting];
+         [[GlobalConfig  ShareGlobalConfig]initDBSetting];
+         [[GlobalConfig  ShareGlobalConfig]registerAPNS];
+        
+    });
+    
     return YES;
 }
 
