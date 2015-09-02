@@ -33,7 +33,8 @@
 @end
 
 @interface YTKNetworkConfig : NSObject
-
+//YTKNetworkConfig 类：用于统一设置网络请求的服务器和 CDN 的地址。
+//YTKRequest 类：所有的网络请求类需要继承于 YTKRequest 类，每一个YTKRequest 类的子类代表一种专门的网络请求。
 + (YTKNetworkConfig *)sharedInstance;
 
 @property (strong, nonatomic) NSString *baseUrl;

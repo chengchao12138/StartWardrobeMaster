@@ -111,6 +111,8 @@
 		42B65BD51B958CFE00AED0CE /* YTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BB81B958CFE00AED0CE /* YTKNetworkConfig.m */; };
 		42B65BD61B958CFE00AED0CE /* YTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BBA1B958CFE00AED0CE /* YTKNetworkPrivate.m */; };
 		42B65BD71B958CFE00AED0CE /* YTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BBC1B958CFE00AED0CE /* YTKRequest.m */; };
+		42B65BDB1B95912F00AED0CE /* LoginInAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BDA1B95912F00AED0CE /* LoginInAPI.m */; };
+		42B65BDE1B959D7900AED0CE /* YTKUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BDD1B959D7900AED0CE /* YTKUrlArgumentsFilter.m */; };
 		42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */; };
 		42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D51B8AC2CC0094A9CF /* CCBaseViewController.m */; };
 		42CAF7DA1B8AC3480094A9CF /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D91B8AC3480094A9CF /* CCBaseTabBarController.m */; };
@@ -324,6 +326,10 @@
 		42B65BBA1B958CFE00AED0CE /* YTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKNetworkPrivate.m; sourceTree = "<group>"; };
 		42B65BBB1B958CFE00AED0CE /* YTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKRequest.h; sourceTree = "<group>"; };
 		42B65BBC1B958CFE00AED0CE /* YTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKRequest.m; sourceTree = "<group>"; };
+		42B65BD91B95912F00AED0CE /* LoginInAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInAPI.h; sourceTree = "<group>"; };
+		42B65BDA1B95912F00AED0CE /* LoginInAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInAPI.m; sourceTree = "<group>"; };
+		42B65BDC1B959D7900AED0CE /* YTKUrlArgumentsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKUrlArgumentsFilter.h; sourceTree = "<group>"; };
+		42B65BDD1B959D7900AED0CE /* YTKUrlArgumentsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKUrlArgumentsFilter.m; sourceTree = "<group>"; };
 		42CAF7D01B8AC27F0094A9CF /* CCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseNavigationController.h; sourceTree = "<group>"; };
 		42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseNavigationController.m; sourceTree = "<group>"; };
 		42CAF7D41B8AC2CC0094A9CF /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
@@ -388,6 +394,8 @@
 		426721C91B881FF600D7E201 /* StartWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				426721CE1B881FF600D7E201 /* AppDelegate.h */,
+				426721CF1B881FF600D7E201 /* AppDelegate.m */,
 				42CAF7C51B8AC1120094A9CF /* Expand */,
 				42CAF7C21B8AC0E10094A9CF /* Resource */,
 				42CAF7BF1B8AC0A80094A9CF /* Vender */,
@@ -752,6 +760,17 @@
 			path = YTKNetwork;
 			sourceTree = "<group>";
 		};
+		42B65BD81B95910300AED0CE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				42B65BD91B95912F00AED0CE /* LoginInAPI.h */,
+				42B65BDA1B95912F00AED0CE /* LoginInAPI.m */,
+				42B65BDC1B959D7900AED0CE /* YTKUrlArgumentsFilter.h */,
+				42B65BDD1B959D7900AED0CE /* YTKUrlArgumentsFilter.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		42CAF7BA1B8ABFFB0094A9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,8 +803,6 @@
 			children = (
 				426721D41B881FF600D7E201 /* Main.storyboard */,
 				426721D91B881FF600D7E201 /* LaunchScreen.xib */,
-				426721CE1B881FF600D7E201 /* AppDelegate.h */,
-				426721CF1B881FF600D7E201 /* AppDelegate.m */,
 				426721D11B881FF600D7E201 /* ViewController.h */,
 				426721D21B881FF600D7E201 /* ViewController.m */,
 			);
@@ -867,6 +884,7 @@
 		42CAF7C81B8AC1570094A9CF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				42B65BD81B95910300AED0CE /* API */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -1116,6 +1134,7 @@
 				42CAF7DE1B8AC38D0094A9CF /* CCBaseTableViewController.m in Sources */,
 				42B65BD51B958CFE00AED0CE /* YTKNetworkConfig.m in Sources */,
 				42B65BD41B958CFE00AED0CE /* YTKNetworkAgent.m in Sources */,
+				42B65BDB1B95912F00AED0CE /* LoginInAPI.m in Sources */,
 				428096AA1B8AFAEB00DCD26B /* SDWebImagePrefetcher.m in Sources */,
 				428096E91B8AFC3000DCD26B /* DDAbstractDatabaseLogger.m in Sources */,
 				42B65AD41B8E989A00AED0CE /* MBProgressHUD.m in Sources */,
@@ -1140,6 +1159,7 @@
 				428096E81B8AFC3000DCD26B /* CocoaLumberjack.modulemap in Sources */,
 				42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */,
 				42B65BC71B958CFE00AED0CE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				42B65BDE1B959D7900AED0CE /* YTKUrlArgumentsFilter.m in Sources */,
 				428096A61B8AFAEB00DCD26B /* SDWebImageDecoder.m in Sources */,
 				42B65BBD1B958CFE00AED0CE /* AFDownloadRequestOperation.m in Sources */,
 				428096AD1B8AFAEB00DCD26B /* UIImage+MultiFormat.m in Sources */,

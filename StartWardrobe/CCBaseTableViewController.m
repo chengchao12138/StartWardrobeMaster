@@ -33,7 +33,7 @@
     if (!_tableView) {
         _tableView=[[UITableView  alloc]initWithFrame:CGRectMake(0, 0,
                                                       MDK_SCREEN_WIDTH, MDK_SCREEN_HEIGHT) style:UITableViewStylePlain];
-        _tableView.backgroundColor=[UIColor whiteColor];
+        _tableView.backgroundColor=[UIColor clearColor];
         _tableView.delegate=self;
         _tableView.dataSource=self;
         _tableView.tableFooterView=[[UIView alloc]initWithFrame:CGRectZero];

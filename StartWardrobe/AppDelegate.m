@@ -10,6 +10,9 @@
 #import "MainViewController.h"
 #import "CCBaseNavigationController.h"
 #import "GlobalConfig.h"
+#import "YTKNetworkConfig.h"
+#import "LoginInAPI.h"
+#import "YTKUrlArgumentsFilter.h"
 @interface AppDelegate ()
 
 @end
@@ -27,21 +30,49 @@
     MainViewController *mainVC=[[MainViewController  alloc]init];
     CCBaseNavigationController *NavigationController1=[[CCBaseNavigationController  alloc]initWithRootViewController:mainVC];
     NavigationController1.tabBarItem.image= [UIImage imageNamed:@""];
-    
-    
-    
     [self.window setRootViewController:NavigationController1];
-    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [[GlobalConfig  ShareGlobalConfig]initGlobalLogSettting];
          [[GlobalConfig  ShareGlobalConfig]initDBSetting];
          [[GlobalConfig  ShareGlobalConfig]registerAPNS];
         
     });
+    [YTKNetworkConfig sharedInstance].baseUrl=@"http://apis.baidu.com/xingqitel/app_sms/app_sms";
+    YTKNetworkConfig *config=[YTKNetworkConfig sharedInstance];
+    YTKUrlArgumentsFilter *fi=[YTKUrlArgumentsFilter filterWithArguments:[NSDictionary dictionaryWithObjectsAndKeys:@"a83d4ed4e3985469222512484698a983",@"apikey" ,nil]];
+     [config addUrlFilter:fi];
+    
+//    NSArray *arr=[[NSArray alloc]initWithObjects:@{@"apikey":@"a83d4ed4e3985469222512484698a983"}];
+//    
+//    
+//    
+//    
+//    
+//   [ config  addUrlFilter:arr];
+    
+    
+    NSTimer *time= [NSTimer timerWithTimeInterval:20
+                            target:self
+                            selector:@selector(send:)
+                                    userInfo:nil
+                                repeats:NO];
+    [time fire];
     
     return YES;
 }
-
+-(void)send:(id)sender
+{
+    LoginInAPI *api=[[LoginInAPI alloc]initWithUserName:@"验证码91485324用于QQ1******8更换密保手机,泄露有风险.防盗能力提升百倍 aq.qq.com/s -QQ安全中心[腾讯科技]" WithPassWord:@""];
+    
+    [api startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+        NSLog(@"%@",request.responseString);
+        
+    } failure:^(YTKBaseRequest *request) {
+        
+        NSLog(@"%@",request.responseString);
+        
+    }];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

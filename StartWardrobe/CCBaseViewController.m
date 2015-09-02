@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     self.navigationController.navigationBar.barTintColor=[UIColor colorWithRed:30/255.0 green:144/255.0 blue:255/250.0 alpha:0.5];
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -85,16 +85,26 @@
 }
 
 - (void)showSuccess {
-    
-   [ LCProgressHUD     showStatus:LCProgressHUDStatusSuccess   text:@"成功"];
+     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 - (void)showError {
     
-    [LCProgressHUD     showStatus:LCProgressHUDStatusError text:nil];
+    NSArray * arr= [MBProgressHUD  allHUDsForView:self.view];
+    for ( MBProgressHUD *HUD in arr ) {
+        if ([HUD respondsToSelector:@selector(removeFromSuperview)]) {
+            [HUD removeFromSuperview];
+        }
+    }
 }
 
 - (void)hideLoading {
-    [LCProgressHUD hide];
+    
+    NSArray * arr= [MBProgressHUD  allHUDsForView:self.view];
+    for ( MBProgressHUD *HUD in arr ) {
+        if ([HUD respondsToSelector:@selector(removeFromSuperview)]) {
+            [HUD removeFromSuperview];
+        }
+    }
 }
 
 #pragma mark - View rotation
