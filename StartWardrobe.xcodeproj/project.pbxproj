@@ -113,6 +113,7 @@
 		42B65BD71B958CFE00AED0CE /* YTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BBC1B958CFE00AED0CE /* YTKRequest.m */; };
 		42B65BDB1B95912F00AED0CE /* LoginInAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BDA1B95912F00AED0CE /* LoginInAPI.m */; };
 		42B65BDE1B959D7900AED0CE /* YTKUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65BDD1B959D7900AED0CE /* YTKUrlArgumentsFilter.m */; };
+		42B65C1A1B96F01600AED0CE /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C181B96F01600AED0CE /* NSDate+Common.m */; };
 		42CAF7D21B8AC27F0094A9CF /* CCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */; };
 		42CAF7D61B8AC2CC0094A9CF /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D51B8AC2CC0094A9CF /* CCBaseViewController.m */; };
 		42CAF7DA1B8AC3480094A9CF /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAF7D91B8AC3480094A9CF /* CCBaseTabBarController.m */; };
@@ -330,6 +331,8 @@
 		42B65BDA1B95912F00AED0CE /* LoginInAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInAPI.m; sourceTree = "<group>"; };
 		42B65BDC1B959D7900AED0CE /* YTKUrlArgumentsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKUrlArgumentsFilter.h; sourceTree = "<group>"; };
 		42B65BDD1B959D7900AED0CE /* YTKUrlArgumentsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKUrlArgumentsFilter.m; sourceTree = "<group>"; };
+		42B65C181B96F01600AED0CE /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		42B65C191B96F01600AED0CE /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
 		42CAF7D01B8AC27F0094A9CF /* CCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseNavigationController.h; sourceTree = "<group>"; };
 		42CAF7D11B8AC27F0094A9CF /* CCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseNavigationController.m; sourceTree = "<group>"; };
 		42CAF7D41B8AC2CC0094A9CF /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
@@ -865,6 +868,8 @@
 		42CAF7C61B8AC11C0094A9CF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				42B65C181B96F01600AED0CE /* NSDate+Common.m */,
+				42B65C191B96F01600AED0CE /* NSDate+Common.h */,
 				42CAF7EF1B8ACB230094A9CF /* NSString */,
 			);
 			name = Category;
@@ -1189,6 +1194,7 @@
 				42B65BCD1B958CFE00AED0CE /* UIRefreshControl+AFNetworking.m in Sources */,
 				42B65BD21B958CFE00AED0CE /* YTKChainRequest.m in Sources */,
 				426721D31B881FF600D7E201 /* ViewController.m in Sources */,
+				42B65C1A1B96F01600AED0CE /* NSDate+Common.m in Sources */,
 				428096BF1B8AFB3400DCD26B /* FMDatabaseAdditions.m in Sources */,
 				42CAF7E51B8AC4440094A9CF /* CCBaseSearchViewController.m in Sources */,
 				42B65BC61B958CFE00AED0CE /* AFURLSessionManager.m in Sources */,
@@ -1282,7 +1288,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1304,6 +1311,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1d43a3a8-bde0-47ef-880f-ee431a764683";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1325,7 +1333,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1340,6 +1349,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1d43a3a8-bde0-47ef-880f-ee431a764683";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1349,10 +1359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StartWardrobe/PrefixHeader.pch";
 				INFOPLIST_FILE = StartWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d43a3a8-bde0-47ef-880f-ee431a764683";
 			};
 			name = Debug;
 		};
@@ -1360,10 +1372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Medpal Health Solution Co,ltd.";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/StartWardrobe/PrefixHeader.pch";
 				INFOPLIST_FILE = StartWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d43a3a8-bde0-47ef-880f-ee431a764683";
 			};
 			name = Release;
 		};

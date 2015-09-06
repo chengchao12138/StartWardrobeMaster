@@ -19,8 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
-    self.navigationController.navigationBar.barTintColor=[UIColor colorWithRed:30/255.0 green:144/255.0 blue:255/250.0 alpha:0.5];
+    self.view.backgroundColor = [UIColor clearColor];
+//    self.navigationController.navigationBar.barTintColor=[UIColor colorWithRed:30/255.0 green:144/255.0 blue:255/250.0 alpha:0.5];
+    [self setbackGroundImage:nil];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar.jpeg"] forBarMetrics:UIBarMetricsDefault];
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -33,7 +36,7 @@
 -(void)setbackGroundImage:(UIImage*)backgroundImage{
     
     UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    backgroundImageView.image = backgroundImage;
+    backgroundImageView.image = [UIImage   imageNamed:@"backGrould.png"];
     [self.view insertSubview:backgroundImageView atIndex:0];
 }
 
@@ -75,7 +78,7 @@
     
     MBProgressHUD * hud=    [[MBProgressHUD alloc]initWithView:self.view];
     hud.mode=MBProgressHUDModeCustomView;
-    hud.color=[UIColor whiteColor];
+    hud.color=[UIColor clearColor];
     hud.customView=image;
     hud.labelText=@"加载中";
     hud.labelFont=[UIFont fontWithName:@"Helvetica" size:12];
